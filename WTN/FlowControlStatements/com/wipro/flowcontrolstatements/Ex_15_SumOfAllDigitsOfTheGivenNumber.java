@@ -10,6 +10,7 @@ public class Ex_15_SumOfAllDigitsOfTheGivenNumber {
 	    {
 	    	r=n%10;
 	    	sum=sum+r;
+	    	//Here the number gets decreased 
 	    	n=n/10;
 	    }
 	    System.out.println(sum);
