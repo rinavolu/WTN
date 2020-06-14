@@ -1,27 +1,13 @@
 package com.wipro.arrays;
-
+import java.util.Arrays;
 public class Ex_5_2NDLargestAndSmallestArray {
 	public static void main(String args[]) {
-	int a[]= {5,8,9,70,78,6,8,1};
-	int max_first=a[0],min_first=a[0];
-	for(int i=1;i<a.length;i++)
-	{
-		if(a[i]>max_first)
-			max_first=a[i];
-		if(a[i]<min_first)
-			min_first=a[i];
-	}
-	int max_second=0,min_second=a[0];
-	for(int i=0;i<a.length;i++)
-	{
-		if(a[i]>max_second && a[i]!=max_first)
-			max_second=a[i];
-		if(a[i]<min_second&&a[i]!=min_first)
-			min_second=a[i];
-	}
-	System.out.println(max_first);
-	System.out.println(max_second);
-	System.out.println(min_first);
-	System.out.println(min_second);
+	int a[]= {10,20,45,50,78,99,100};
+	int n=a.length;
+    Arrays.sort(a);
+	System.out.println("The First maximum element is:-"+a[n-1]);
+	System.out.println("The Second maximum element is:-"+a[n-2]);
+	System.out.println("The First minimum element is:-"+a[0]);
+	System.out.println("The Second minimum element is:-"+a[1]);
 }
 }
